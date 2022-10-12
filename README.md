@@ -23,3 +23,5 @@ miltech = (joiningNationMiltech * joiningNationMultiplier + unifierMiltech * uni
 The mod requires Unity Mod Manager to function. To install Unity Mod Manager, download version 0.25.0 or later version from Nexus Mods (https://www.nexusmods.com/site/mods/21).
 
 Install Unity Mod Manager using Doorstop Proxy installation method.
+
+Mod webpage: https://github.com/Yard1/TerraInvicta-PopBasedMiltechCalculation
