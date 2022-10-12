@@ -1,0 +1,7 @@
+{
+  "Id": "PopBasedMiltechCalculation",
+  "DisplayName": "Unification Pop Based Miltech Calculation",
+  "Author": "Yard1",
+  "Version": "1.0.0",
+  "EntryMethod": "PopBasedMiltechCalculation.PopBasedMiltechCalculation.Load"
+}
