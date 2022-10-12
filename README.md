@@ -19,3 +19,7 @@ joiningNationMultiplier = joiningNationPopulation + ((numJoiningNationArmies + n
 unifierMultiplier = unifierPopulation + ((numunifierArmies + numunifierNavies) * 0.5 * unifierPopulation)
 miltech = (joiningNationMiltech * joiningNationMultiplier + unifierMiltech * unifierMultiplier) / (joiningNationMultiplier + unifierMultiplier)
 ```
+
+The mod requires Unity Mod Manager to function. To install Unity Mod Manager, download version 0.25.0 or later version from Nexus Mods (https://www.nexusmods.com/site/mods/21).
+
+Install Unity Mod Manager using Doorstop Proxy installation method.
