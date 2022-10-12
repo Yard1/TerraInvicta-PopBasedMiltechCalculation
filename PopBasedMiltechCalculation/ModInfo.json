@@ -3,5 +3,7 @@
   "DisplayName": "Unification Pop Based Miltech Calculation",
   "Author": "Yard1",
   "Version": "1.0.0",
-  "EntryMethod": "PopBasedMiltechCalculation.PopBasedMiltechCalculation.Load"
+  "EntryMethod": "PopBasedMiltechCalculation.PopBasedMiltechCalculation.Load",
+  "Website": "https://github.com/Yard1/TerraInvicta-PopBasedMiltechCalculation",
+  "Repository": "https://raw.githubusercontent.com/Yard1/TerraInvicta-PopBasedMiltechCalculation/latest/PopBasedMiltechCalculation.sln",
 }
