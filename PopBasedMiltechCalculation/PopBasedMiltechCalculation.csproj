@@ -63,7 +63,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="Repository.json" />
     <None Include="ModInfo.json" />
     <None Include="packages.config" />
