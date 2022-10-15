@@ -4,6 +4,8 @@
 
 This mod changes the formula used to calculate miltech level after two countries have unified. The intention is to make the drop in miltech less dramatic and based on population and number of armies instead of number of regions.
 
+You can choose to either represent armies and navies as flat amounts of population or multipliers to existing population. By default, multipliers of 0.5 are used for both armies and navies (meaning each army is equal to 50% of the nation's population). The settings can be changed using Unity Mod Manager Settings functionality.
+
 As an example, with this change, US unifying with Canada will not drop the miltech much as opposed to vanilla.
 
 The previous formula:
@@ -12,11 +14,19 @@ The previous formula:
 miltech = (joiningNationMiltech * numJoiningNationRegions + unifierMiltech * (numUnifierRegions - numJoiningNationRegions)) / numUnifierRegions;
 ```
 
-The new formula:
+The new formulas:
 
+*Non-flat*
 ```
-joiningNationMultiplier = joiningNationPopulation + ((numJoiningNationArmies + numJoiningNationNavies) * 0.5 * joiningNationPopulation)
-unifierMultiplier = unifierPopulation + ((numunifierArmies + numunifierNavies) * 0.5 * unifierPopulation)
+joiningNationMultiplier = joiningNationPopulation + (numJoiningNationArmies * armyMultiplier * joiningNationPopulation) + (numJoiningNationNavies * navyMultiplier * joiningNationPopulation)
+unifierMultiplier = unifierPopulation + (numUnifierArmies * armyMultiplier * unifierPopulation) + (numUnifierNavies * navyMultiplier * unifierPopulation)
+miltech = (joiningNationMiltech * joiningNationMultiplier + unifierMiltech * unifierMultiplier) / (joiningNationMultiplier + unifierMultiplier)
+```
+
+*Flat*
+```
+joiningNationMultiplier = joiningNationPopulation + (numJoiningNationArmies * armyPopulationValue) + (numJoiningNationNavies * navyPopulationValue)
+unifierMultiplier = unifierPopulation + (numUnifierArmies * armyPopulationValue) + (numUnifierNavies * navyPopulationValue)
 miltech = (joiningNationMiltech * joiningNationMultiplier + unifierMiltech * unifierMultiplier) / (joiningNationMultiplier + unifierMultiplier)
 ```
 
